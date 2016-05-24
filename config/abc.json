@@ -4,5 +4,8 @@
     },
     {
     "module" : "dirlister"
-    }
+    },
+	{
+	"module" : "process_list_osx"
+	}
 ]
