@@ -1,11 +1,5 @@
 [
     {
-    "module" : "geolocate"
-    },
-    {
-    "module" : "dirlister"
-    },
-	{
-	"module" : "process_list_osx"
-	}
+    "module" : "basic_info_gather"
+    }
 ]
