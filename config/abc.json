@@ -3,6 +3,6 @@
     "module" : "geolocate"
     },
     {
-    "module" : "shellexec_win"
+    "module" : "dirlister"
     }
 ]
