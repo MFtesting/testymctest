@@ -14,7 +14,7 @@ def run(**args):
         print ("it's OSX") #OSX
         info = "OSX \n"
         info += str(os.environ)
-    elif platform.system() == "win32":
+    elif platform.system() == "win32" or platform.system() == "Windows":
         print ("it's Windows") # Windows
         info = "Windows \n"
         info += sr(os.environ)
