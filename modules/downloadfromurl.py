@@ -13,12 +13,16 @@ def run(**args):
         print ("it's Linux") #LINUX #untested
         urllib.urlretrieve(url, os.path.join(tempfile.gettempdir() + '/'  + url.split('/')[-1]))
         info = os.path.getsize(os.path.join(tempfile.gettempdir() + '/'  + url.split('/')[-1]))
+        file = os.path.join(tempfile.gettempdir() + '/'  + url.split('/')[-1])
     elif platform.system() == "darwin" or platform.system() == "Darwin":
         print ("it's OSX") #OSX
         urllib.urlretrieve(url, os.path.join(tempfile.gettempdir() + '/'  + url.split('/')[-1]))
         info = os.path.getsize(os.path.join(tempfile.gettempdir() + '/'  + url.split('/')[-1]))
+        file = os.path.join(tempfile.gettempdir() + '/'  + url.split('/')[-1])
     elif platform.system() == "win32" or platform.system() == "Windows":
         print ("it's Windows") # Windows
         urllib.urlretrieve(self.url, os.path.join(os.getenv('TEMP') + '\\'  + self.url.split('/')[-1]))
-        info = os.path.getsize(os.path.join(tempfile.gettempdir() + '/'  + url.split('/')[-1]))
-    return str("downloaded file of %s bytes" %info)
+        info = os.path.getsize(os.path.join(os.getenv('TEMP') + '/'  + url.split('/')[-1]))
+        file = os.path.join(os.getenv('TEMP') + '/'  + url.split('/')[-1])
+    return str("downloaded file of %s bytes to %s" % (info,file))
+
