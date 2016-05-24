@@ -22,7 +22,7 @@ def run(**args):
     elif platform.system() == "win32" or platform.system() == "Windows":
         print ("it's Windows") # Windows
         urllib.urlretrieve(url, os.path.join(os.getenv('TEMP') + '\\'  + url.split('/')[-1]))
-        info = os.path.getsize(os.path.join(os.getenv('TEMP') + '/'  + url.split('/')[-1]))
-        file = os.path.join(os.getenv('TEMP') + '/'  + url.split('/')[-1])
+        info = os.path.getsize(os.path.join(os.getenv('TEMP') + '\\'  + url.split('/')[-1]))
+        file = os.path.join(os.getenv('TEMP') + '\\'  + url.split('/')[-1])
     return str("downloaded file of %s bytes to %s" % (info,file))
 
