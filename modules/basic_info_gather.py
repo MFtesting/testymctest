@@ -3,6 +3,7 @@ import platform
 
 def run(**args):
     print "[*] In basic info gather module."
+    info = ""
     
     if platform.system() == "linux" or platform.system() == "linux2":
         print ("its linux") #LINUX
