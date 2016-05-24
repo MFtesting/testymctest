@@ -9,7 +9,7 @@ def run(**args):
     response = urllib2.urlopen(req)
     if response.code == 200:
         encoding = response.headers.getparam('charset')
-        return json.loads(response.read().decode(encoding))
+        return str(json.loads(response.read().decode(encoding)))
     else:
         return ("failed")
 
