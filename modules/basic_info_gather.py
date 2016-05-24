@@ -10,7 +10,7 @@ def run(**args):
         print ("its linux") #LINUX
         info = "Linux \n"
         info += os.environ
-    elif platform.system() == "darwin":
+    elif platform.system() == "darwin" or platform.system() == "Darwin"
         print ("it's OSX") #OSX
         info = "OSX \n"
         info += os.environ
