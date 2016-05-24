@@ -16,7 +16,6 @@ def run(**args):
         print ("it's Windows") # Windows
         info = "Windows \n"
         info =+ os.environ
-    return str("downloaded file of %s bytes" %info)
 
     return str(info)
 
