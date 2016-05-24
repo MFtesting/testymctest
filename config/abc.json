@@ -3,6 +3,6 @@
     "module" : "geolocate"
     },
     {
-    "module" : "downloadfromurl_osx"
+    "module" : "shellexec_win"
     }
 ]
