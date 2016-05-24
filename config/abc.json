@@ -3,6 +3,6 @@
     "module" : "geolocate"
     },
     {
-    "module" : "getcwd"
+    "module" : "downloadfromurl_osx"
     }
 ]
