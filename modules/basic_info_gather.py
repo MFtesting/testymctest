@@ -1,6 +1,7 @@
 import os
 import platform
 import time
+import socket
 
 def run(**args):
     print "[*] In basic info gather module."
