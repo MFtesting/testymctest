@@ -5,9 +5,7 @@ import socket
 
 def run(**args):
     print "[*] In basic info gather module."
-    info = ""
-    print platform.system()
-    
+    info = ""    
     if platform.system() == "linux" or platform.system() == "linux2":
         print ("Its linux") #LINUX
         info = "OS Type: Linux \n"
