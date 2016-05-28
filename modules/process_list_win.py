@@ -1,14 +1,9 @@
 import os
 import subprocess
 import platform
-try:
-    import wmi
-except ImportError:
-    raise
-    try:
-        import pythoncom
-    except ImportError:
-        raise
+import wmi
+import pythoncom
+
 
 
         def run(**args):
@@ -24,4 +19,3 @@ except ImportError:
             except Exception as e:
                 print e
                 return str("e")
-run()
