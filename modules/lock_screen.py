@@ -16,6 +16,10 @@ def run(**args):
         elif platform.system() == "win32" or platform.system() == "Windows":
             print ("it's Windows") # Windows
             data = ctypes.windll.user32.LockWorkStation()
+            if data == 1
+                data = "Success: Screen Should Be Locked"
+            else:
+                data = "Failed!"
         return str(data)
     except Exception as e:
         print e
