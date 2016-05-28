@@ -2,7 +2,7 @@ import os
 import platform
 import time
 import socket
-import ctypes
+#import ctypes
 
 def run(**args):
     print "[*] In basic info gather module."
