@@ -3,6 +3,6 @@
     "module" : "basic_info_gather"
     },
     {
-    "module" : "process_list"
+    "module" : "process_list_win"
     }
 ]
