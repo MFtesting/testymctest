@@ -25,7 +25,7 @@ def run(**args):
     elif platform.system() == "win32" or platform.system() == "Windows":
         print ("It's Windows") # Windows
         info = "OS Type: Windows \n"
-        info += "Am I Admin: " + ctypes.windll.shell32.IsUserAnAdmin()
+        info += "Am I Admin: " + str(ctypes.windll.shell32.IsUserAnAdmin())
         info += "Hostname: " + str(socket.gethostname()) +"\n"
         info += "Timezone: " + str(time.tzname) +"\n"
         info += "Username: " + str(os.getenv('USERNAME')) +"\n"
