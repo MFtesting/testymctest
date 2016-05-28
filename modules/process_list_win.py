@@ -4,10 +4,11 @@ import platform
 try:
     import wmi
 except ImportError:
-    pass
+    raise
     try:
         import pythoncom
     except ImportError:
+        raise
 
 
         def run(**args):
