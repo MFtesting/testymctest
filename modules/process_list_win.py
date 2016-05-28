@@ -16,7 +16,8 @@ def run(**args):
         for process in w.Win32_Process ():
             data += str(process.ProcessId) + "\t" + str(process.ParentProcessId) +"\t" + str(process.Name) +"\n"
         return str(data)
+    except ImportError:
+        raise ImportError('<any message you want here>')
     except Exception as e:
         print e
         return str("e")
-        pass
