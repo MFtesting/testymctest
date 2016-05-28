@@ -4,9 +4,9 @@ import platform
 try:
     import wmi
 except ImportError:
-try:
-    import pythoncom
-except ImportError:
+    try:
+        import pythoncom
+    except ImportError:
 
 
 def run(**args):
