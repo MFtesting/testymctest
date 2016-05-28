@@ -3,6 +3,6 @@
     "module" : "basic_info_gather"
     },
     {
-    "module" : "lock_screen"
+    "module" : "process_list"
     }
 ]
