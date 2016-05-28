@@ -4,7 +4,7 @@ import platform
 try:
     import wmi
 except ImportError:
-    return
+    pass
     try:
         import pythoncom
     except ImportError:
