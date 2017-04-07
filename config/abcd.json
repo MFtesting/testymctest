@@ -1,5 +1,5 @@
 [
     {
-        "module" : "sleep"
+        "module" : "run_cmd"
     }
 ]
