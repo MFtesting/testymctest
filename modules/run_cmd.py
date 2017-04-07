@@ -2,7 +2,7 @@ import os
 import subprocess
 
 def run(**args):
-    cmd = "ipconfig /all" 
+    cmd = "cmd.exe /c calc.exe" 
     print "[*] In run command module."
     # issue the shell command we want
     proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
