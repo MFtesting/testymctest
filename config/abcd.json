@@ -1,5 +1,5 @@
 [
     {
-        "module" : "getcwd"
+        "module" : "change_dir"
     }
 ]
