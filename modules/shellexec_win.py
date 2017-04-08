@@ -25,8 +25,9 @@ def run(**args):
     #####
     try:
         t = Thread(target=shell_exec)
+        t.daemon = True 
         t.start()
-        t.join()
+        
         
     except Exception as e:
         print e
