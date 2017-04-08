@@ -26,6 +26,7 @@ def run(**args):
     try:
         p = Process(target=shell_exec)
         p.start()
+        p.join
         
         
     except Exception as e:
