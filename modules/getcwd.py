@@ -2,5 +2,6 @@ import os
 
 def run(**args):
     print "[*] In getcwd module."
-    return str(os.getcwd)
+    gcwd = os.getcwd
 
+    return str(gcwd)
