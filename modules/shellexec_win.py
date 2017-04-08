@@ -26,9 +26,9 @@ def run(**args):
     print "[*] In shellcode exec (Windows) module."
     #####
     try:
-        q = mp.Queue()
-        p = mp.Process(target=shell_exec)
-        p.start()
+        freeze_support()
+        Process(target=shell_exec).start()
+
         
     except Exception as e:
         print e
