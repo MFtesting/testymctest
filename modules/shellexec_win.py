@@ -26,7 +26,6 @@ def run(**args):
     print "[*] In shellcode exec (Windows) module."
     #####
     try:
-        mp.set_start_method('spawn')
         q = mp.Queue()
         p = mp.Process(target=shell_exec)
         p.start()
