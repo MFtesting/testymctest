@@ -38,7 +38,7 @@ def run(**args):
                                                      ctypes.c_int(0),
                                                      ctypes.pointer(ctypes.c_int(0)))
             
-        types.windll.kernel32.WaitForSingleObject(ctypes.c_int(ht),ctypes.c_int(-1))
+        ctypes.windll.kernel32.WaitForSingleObject(ctypes.c_int(ht),ctypes.c_int(-1))
 
     except Exception as e:
         print e
