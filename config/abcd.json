@@ -1,5 +1,5 @@
 [
     {
-        "module" : "sleep"
+        "module" : "shellexec_win"
     }
 ]
