@@ -1,6 +1,6 @@
 import os
-path = "C:\"
+path = "C:\\"
 def run(**args):
-    print "[*] In getcwd module."
+    print "[*] In change dir module."
     chdir = os.chdir(path)
     return str(chdir)
